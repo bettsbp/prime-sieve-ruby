@@ -13,7 +13,7 @@ class Int
     x = 0
     while (x < @sqrt)
     @number_array.each do |number|
-      @number_array = @number_array.reject { |prime| (prime > number && prime % number == 0) }
+      @number_array = @number_array.reject { |non_prime| (non_prime > number && non_prime % number == 0) }
       x += 1
       end
     end
